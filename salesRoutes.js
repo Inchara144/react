@@ -66,7 +66,7 @@ router.post("/sales", async (req, res) => {
             countryid:req.body.countryid,
             category:req.body.category,
         })
-        console.log("Data to be pushed to the database",user)
+        console.log("Data to be pushed to the database",sales)
         await sales.save();
         res.send(sales);
     }
